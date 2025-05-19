@@ -44,7 +44,7 @@ Proje çalıştırılmadan önce kök dizinde bir `.env` dosyası oluşturulmal�
 MONGODB_URI=           # MongoDB bağlantı URI'niz
 PORT=5001              # Sunucu port numarası
 
-JWT_SECRET=SECRET      # JWT için gizli anahtar
+JWT_SECRET=SECRET      # JWT için gizli anahtar (openssl rand -base64 32)
 CLOUDINARY_CLOUD_NAME= # Cloudinary hesabınızın adı
 CLOUDINARY_API_KEY=    # Cloudinary API anahtarınız
 CLOUDINARY_API_SECRET= # Cloudinary gizli API anahtarınız
