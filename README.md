@@ -1,9 +1,8 @@
-````markdown
 # Gur Chat Uygulaması
 
 Gerçek zamanlı, güvenli ve hızlı mesajlaşma deneyimi sunan bir online chat uygulamasıdır. Şirket içi iletişim ihtiyacını karşılamak üzere geliştirilmiştir.
 
-##  Özellikler
+## Özellikler
 
 - Gerçek zamanlı mesajlaşma (Socket.io)
 - MongoDB ile veri saklama
@@ -12,12 +11,12 @@ Gerçek zamanlı, güvenli ve hızlı mesajlaşma deneyimi sunan bir online chat
 - Mobil uyumlu modern kullanıcı arayüzü (React.js + Redux Toolkit)
 - Güvenli ve ölçeklenebilir altyapı
 
-## 🛠Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 - **Node.js** + **Express**
 - **Socket.io**
 - **MongoDB**
-- **cloudinary**
+- **Cloudinary**
 - **React.js**
 - **Redux Toolkit**
 - **HTML / CSS / JavaScript**
@@ -34,9 +33,9 @@ npm start
 cd frontend
 npm install
 npm run dev
-````
+```
 
-##  .env Dosyası
+## .env Dosyası
 
 Proje çalıştırılmadan önce kök dizinde bir `.env` dosyası oluşturulmalı ve aşağıdaki formatta kişisel bilgileriniz girilmelidir:
 `.env` dosyası **kişisel ve gizli bilgileri** içerdiğinden kesinlikle başkalarıyla **paylaşılmamalıdır**
@@ -51,8 +50,3 @@ CLOUDINARY_API_KEY=    # Cloudinary API anahtarınız
 CLOUDINARY_API_SECRET= # Cloudinary gizli API anahtarınız
 NODE_ENV=development   # Ortam ayarı (development/production)
 ```
-
-
-
-
-
