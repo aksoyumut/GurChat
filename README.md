@@ -1,52 +1,29 @@
-# Gur Chat Uygulaması
+### Setup .env file
 
-Gerçek zamanlı, güvenli ve hızlı mesajlaşma deneyimi sunan bir online chat uygulamasıdır. Şirket içi iletişim ihtiyacını karşılamak üzere geliştirilmiştir.
+```js
+MONGODB_URI=...
+PORT=5001
+JWT_SECRET=...
 
-## Özellikler
+CLOUDINARY_CLOUD_NAME=...
+CLOUDINARY_API_KEY=...
+CLOUDINARY_API_SECRET=...
 
-- Gerçek zamanlı mesajlaşma (Socket.io)
-- MongoDB ile veri saklama
-- Mesajlara okundu bilgisi ekleme
-- Bağlı kullanıcıları listeleme ve durum takibi
-- Mobil uyumlu modern kullanıcı arayüzü (React.js + Redux Toolkit)
-- Güvenli ve ölçeklenebilir altyapı
-
-## Kullanılan Teknolojiler
-
-- **Node.js** + **Express**
-- **Socket.io**
-- **MongoDB**
-- **Cloudinary**
-- **React.js**
-- **Redux Toolkit**
-- **HTML / CSS / JavaScript**
-
-## Başlatmak İçin
-
-```bash
-# Sunucu tarafı (backend)
-cd backend
-npm install
-npm start
-
-# İstemci tarafı (frontend)
-cd frontend
-npm install
-npm run dev
+NODE_ENV=development
 ```
 
-## .env Dosyası
+### Build the app
 
-Proje çalıştırılmadan önce kök dizinde bir `.env` dosyası oluşturulmalı ve aşağıdaki formatta kişisel bilgileriniz girilmelidir:
-`.env` dosyası **kişisel ve gizli bilgileri** içerdiğinden kesinlikle başkalarıyla **paylaşılmamalıdır**
+```shell
 
-```env
-MONGODB_URI=           # MongoDB bağlantı URI'niz
-PORT=5001              # Sunucu port numarası
+npm run build
 
-JWT_SECRET=SECRET      # JWT için gizli anahtar (openssl rand -base64 32)
-CLOUDINARY_CLOUD_NAME= # Cloudinary hesabınızın adı
-CLOUDINARY_API_KEY=    # Cloudinary API anahtarınız
-CLOUDINARY_API_SECRET= # Cloudinary gizli API anahtarınız
-NODE_ENV=development   # Ortam ayarı (development/production)
+```
+
+### Start the app
+
+```shell
+
+npm start
+
 ```
