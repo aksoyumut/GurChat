@@ -1,27 +1,28 @@
 ````markdown
-# 🟢 Gur Chat Uygulaması
+# Gur Chat Uygulaması
 
 Gerçek zamanlı, güvenli ve hızlı mesajlaşma deneyimi sunan bir online chat uygulamasıdır. Şirket içi iletişim ihtiyacını karşılamak üzere geliştirilmiştir.
 
-## 🚀 Özellikler
+##  Özellikler
 
-- ⚡ Gerçek zamanlı mesajlaşma (Socket.io)
-- 📦 MongoDB ile veri saklama
-- ✅ Mesajlara okundu bilgisi ekleme
-- 👥 Bağlı kullanıcıları listeleme ve durum takibi
-- 📱 Mobil uyumlu modern kullanıcı arayüzü (React.js + Redux Toolkit)
-- 🔐 Güvenli ve ölçeklenebilir altyapı
+- Gerçek zamanlı mesajlaşma (Socket.io)
+- MongoDB ile veri saklama
+- Mesajlara okundu bilgisi ekleme
+- Bağlı kullanıcıları listeleme ve durum takibi
+- Mobil uyumlu modern kullanıcı arayüzü (React.js + Redux Toolkit)
+- Güvenli ve ölçeklenebilir altyapı
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠Kullanılan Teknolojiler
 
 - **Node.js** + **Express**
 - **Socket.io**
 - **MongoDB**
+- **cloudinary**
 - **React.js**
 - **Redux Toolkit**
 - **HTML / CSS / JavaScript**
 
-## 🏁 Başlatmak İçin
+## Başlatmak İçin
 
 ```bash
 # Sunucu tarafı (backend)
@@ -35,9 +36,10 @@ npm install
 npm run dev
 ````
 
-## 🔐 .env Dosyası
+##  .env Dosyası
 
 Proje çalıştırılmadan önce kök dizinde bir `.env` dosyası oluşturulmalı ve aşağıdaki formatta kişisel bilgileriniz girilmelidir:
+`.env` dosyası **kişisel ve gizli bilgileri** içerdiğinden kesinlikle başkalarıyla **paylaşılmamalıdır**
 
 ```env
 MONGODB_URI=           # MongoDB bağlantı URI'niz
@@ -50,7 +52,7 @@ CLOUDINARY_API_SECRET= # Cloudinary gizli API anahtarınız
 NODE_ENV=development   # Ortam ayarı (development/production)
 ```
 
-> ⚠️ `.env` dosyası **kişisel ve gizli bilgileri** içerdiğinden kesinlikle başkalarıyla **paylaşılmamalı** ve `.gitignore` dosyasına eklenmelidir.
 
-```
+
+
 
